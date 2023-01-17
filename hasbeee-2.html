@@ -19,10 +19,34 @@
    <!-- number 2 -->
    <h2> number 2</h2>
    <p id="ganyu"></p>
+
+   <!-- boolean -->
+   <h2>Boolean</h2>
+   <p>boolean berisi antara true atau false</p>
+   <p id="ayaya"></p>
+
+   <!-- undefined -->
+
+   <h1>javascript operator</h1>
+   <h2>the type of operator</h2>
+   <p>Variables can be emptied if you set the value to <b>undefined</b>.</p>
+   <p id="hehe"></p>
+
+   <!-- array -->
+   <h2>javascript array</h2>
+   <p>array dimulai dari 0, yang berarti benda pertama [0]</p>
+   <p id="haha"></p>
+
+   <!-- object -->
+   <h1>object</h1>
+   <p id="huhu"></p>
+
+   <!--  -->
     <!-- script -->
     <script>
         // string
         let a = "p mabar bang";
+
         let b = "mabar emel bang";
         let c = "kalo ga mabar genset aja";
         document.getElementById("demo").innerHTML = 
@@ -39,6 +63,32 @@
         let eb = 33;
         let ec = 35;
         document.getElementById("ganyu").innerHTML  = ea + "<br>" + eb + "<br>" +ec
+
+        //boolean
+        let ua = 9;
+        let ub = 9;
+        let uc = 7;
+        document.getElementById("ayaya").innerHTML = (ua == ub) + "<br>" + (ua == uc);
+
+        //operator
+        let car = "mercy 2542";
+        car = undefined;
+        document.getElementById("hehe").innerHTML = car + "<br>" + typeof car;
+
+        //array
+        const chassis = ["MB1526", "MB1626", "MB 1836", "MB 2542"];
+        document.getElementById("haha").innerHTML = chassis[0] + "<br>" + chassis [1];
+
+        // object
+        const p = {
+        nama : "udin",
+        umur : "300000 tahun",
+        jk: "cewe",
+        alamat: "jl.in aja dulu"
+        }
+        document.getElementById("huhu").innerHTML = "nama saya adalah" + "<br>" + p.nama + "<br>" + p.umur + "<br>" + p.jk + "<br>" + p.alamat
     </script>
+
+
 </body>
 </html>
